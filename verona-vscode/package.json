@@ -1,0 +1,73 @@
+{
+  "name": "verona",
+  "displayName": "Verona",
+  "description": "JSON-aware support for .vomd, .vocs, and .voud files in Visual Studio Code.",
+  "version": "1.0.0",
+  "publisher": "verona-team",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iqb-berlin/verona-ide-support.git"
+  },
+  "homepage": "https://github.com/iqb-berlin/verona-ide-support",
+  "bugs": {
+    "url": "https://github.com/iqb-berlin/verona-ide-support/issues"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "keywords": [
+    "verona",
+    "json",
+    "vomd",
+    "vocs",
+    "voud"
+  ],
+  "activationEvents": [
+    "onLanguage:verona-json",
+    "onCommand:verona.formatAsJson"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "verona-json",
+        "aliases": [
+          "Verona",
+          "Verona JSON"
+        ],
+        "extensions": [
+          ".vomd",
+          ".vocs",
+          ".voud"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "verona.formatAsJson",
+        "title": "Verona: Format As JSON"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "verona.formatAsJson",
+          "when": "resourceExtname == .vomd || resourceExtname == .vocs || resourceExtname == .voud",
+          "group": "navigation@99"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "verona.formatAsJson",
+          "when": "resourceExtname == .vomd || resourceExtname == .vocs || resourceExtname == .voud"
+        }
+      ]
+    }
+  }
+}

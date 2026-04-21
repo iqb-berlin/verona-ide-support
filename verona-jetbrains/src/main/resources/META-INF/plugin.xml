@@ -1,0 +1,35 @@
+<idea-plugin>
+  <id>dev.verona.jetbrains</id>
+  <name>Verona</name>
+  <version>1.0.0</version>
+  <vendor email="team@example.com">Verona Team</vendor>
+
+  <description><![CDATA[
+    Verona gives <code>.vomd</code>, <code>.vocs</code>, and <code>.voud</code> files a JSON-aware editing experience in JetBrains IDEs.
+    It registers the file type, enables JSON-backed tooling, and adds a dedicated <code>Format As JSON</code> editor action.
+  ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.json</depends>
+
+  <idea-version since-build="223" />
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileType
+      name="Verona"
+      language="JSON"
+      extensions="vomd;vocs;voud"
+      implementationClass="dev.verona.VeronaFileType"
+      fieldName="INSTANCE" />
+  </extensions>
+
+  <actions>
+    <action
+      id="dev.verona.FormatAsJsonAction"
+      class="dev.verona.FormatAsJsonAction"
+      text="Format As JSON"
+      description="Pretty-print the current Verona file as JSON">
+      <add-to-group group-id="EditorPopupMenu" anchor="last" />
+    </action>
+  </actions>
+</idea-plugin>

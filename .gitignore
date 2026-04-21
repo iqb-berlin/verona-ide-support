@@ -1,0 +1,10 @@
+.DS_Store
+.vscode/
+
+verona-jetbrains/build/
+verona-jetbrains/dist/
+
+verona-vscode/dist/
+verona-vscode/node_modules/
+
+*.log

@@ -1,0 +1,9 @@
+<application>
+  <component name="FileTypeManager" version="19">
+    <extensionMap>
+      <mapping pattern="*.vomd" type="JSON" />
+      <mapping pattern="*.vocs" type="JSON" />
+      <mapping pattern="*.voud" type="JSON" />
+    </extensionMap>
+  </component>
+</application>
