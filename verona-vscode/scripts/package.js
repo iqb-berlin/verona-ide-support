@@ -8,6 +8,7 @@ const packageJsonPath = path.join(__dirname, "..", "package.json");
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
 const version = packageJson.version;
 const outputPath = path.join("dist", `verona-vscode-${version}.vsix`);
+fs.mkdirSync(path.join(__dirname, "..", "dist"), { recursive: true });
 const vsceBinary = path.join(
   __dirname,
   "..",
