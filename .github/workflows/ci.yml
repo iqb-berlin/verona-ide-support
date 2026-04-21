@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: verona-vscode/package-lock.json
+
+      - name: Setup Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v5
+        with:
+          gradle-version: 8.14.3
+
+      - name: Install VS Code packaging dependency
+        run: npm ci
+        working-directory: verona-vscode
+
+      - name: Build VS Code extension
+        run: npm run package
+        working-directory: verona-vscode
+
+      - name: Build JetBrains plugin
+        run: ./scripts/build-jetbrains.sh
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: verona-artifacts
+          path: |
+            verona-vscode/dist/*.vsix
+            verona-jetbrains/dist/*.jar
+            verona-jetbrains/dist/*.zip
+          if-no-files-found: error

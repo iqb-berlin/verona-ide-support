@@ -18,3 +18,9 @@ dependencies {
         bundledPlugin("com.intellij.modules.json")
     }
 }
+
+tasks {
+    buildSearchableOptions {
+        enabled = false
+    }
+}

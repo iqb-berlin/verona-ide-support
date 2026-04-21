@@ -1,0 +1,37 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Verona preview</title>
+  <desc id="desc">Illustrated preview of Verona support across editors.</desc>
+  <rect width="1280" height="760" rx="28" fill="#F6F1E7"/>
+  <rect x="50" y="54" width="560" height="640" rx="26" fill="#1E2B3A"/>
+  <rect x="670" y="54" width="560" height="640" rx="26" fill="#FFFFFF"/>
+  <text x="84" y="106" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">VS Code</text>
+  <text x="704" y="106" fill="#11243A" font-family="Arial, sans-serif" font-size="28" font-weight="700">JetBrains</text>
+  <rect x="84" y="144" width="164" height="28" rx="14" fill="#3A7CA5"/>
+  <text x="96" y="164" fill="#FFFFFF" font-family="Courier New, monospace" font-size="18">sample.vomd</text>
+  <rect x="704" y="144" width="164" height="28" rx="14" fill="#D66A4D"/>
+  <text x="716" y="164" fill="#FFFFFF" font-family="Courier New, monospace" font-size="18">sample.vocs</text>
+  <text x="86" y="228" fill="#BDE0FE" font-family="Courier New, monospace" font-size="24">{</text>
+  <text x="116" y="268" fill="#FFE8A3" font-family="Courier New, monospace" font-size="24">"title"</text>
+  <text x="214" y="268" fill="#FFFFFF" font-family="Courier New, monospace" font-size="24">: </text>
+  <text x="246" y="268" fill="#9FE3C5" font-family="Courier New, monospace" font-size="24">"Verona"</text>
+  <text x="116" y="312" fill="#FFE8A3" font-family="Courier New, monospace" font-size="24">"mode"</text>
+  <text x="206" y="312" fill="#FFFFFF" font-family="Courier New, monospace" font-size="24">: </text>
+  <text x="238" y="312" fill="#9FE3C5" font-family="Courier New, monospace" font-size="24">"json"</text>
+  <text x="116" y="356" fill="#FFE8A3" font-family="Courier New, monospace" font-size="24">"files"</text>
+  <text x="206" y="356" fill="#FFFFFF" font-family="Courier New, monospace" font-size="24">: [</text>
+  <text x="248" y="356" fill="#9FE3C5" font-family="Courier New, monospace" font-size="24">"vomd", "vocs", "voud"</text>
+  <text x="86" y="400" fill="#BDE0FE" font-family="Courier New, monospace" font-size="24">}</text>
+  <rect x="84" y="542" width="222" height="50" rx="25" fill="#E8EEF7"/>
+  <text x="118" y="574" fill="#11243A" font-family="Arial, sans-serif" font-size="24" font-weight="700">Verona: Format As JSON</text>
+  <rect x="704" y="204" width="492" height="306" rx="18" fill="#F8FBFF" stroke="#D8E5F2"/>
+  <text x="734" y="262" fill="#11243A" font-family="Courier New, monospace" font-size="24">{</text>
+  <text x="764" y="302" fill="#D66A4D" font-family="Courier New, monospace" font-size="24">"editor"</text>
+  <text x="872" y="302" fill="#11243A" font-family="Courier New, monospace" font-size="24">: </text>
+  <text x="904" y="302" fill="#3A7CA5" font-family="Courier New, monospace" font-size="24">"jetbrains"</text>
+  <text x="764" y="346" fill="#D66A4D" font-family="Courier New, monospace" font-size="24">"action"</text>
+  <text x="872" y="346" fill="#11243A" font-family="Courier New, monospace" font-size="24">: </text>
+  <text x="904" y="346" fill="#3A7CA5" font-family="Courier New, monospace" font-size="24">"Format As JSON"</text>
+  <text x="734" y="390" fill="#11243A" font-family="Courier New, monospace" font-size="24">}</text>
+  <rect x="704" y="542" width="204" height="50" rx="25" fill="#11243A"/>
+  <text x="742" y="574" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Context Menu</text>
+</svg>
