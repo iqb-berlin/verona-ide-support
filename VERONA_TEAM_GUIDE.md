@@ -8,7 +8,7 @@ These files are JSON in practice, so Verona makes them open and format like JSON
 1. Open `Extensions`
 2. Open the extensions menu via `...`
 3. Choose `Install from VSIX...`
-4. Download `verona-vscode-1.0.0.vsix` from the repository release page
+4. Download `verona-vscode-1.0.0.vsix` from [Releases](https://github.com/iqb-berlin/verona-ide-support/releases/tag/v1.0.0)
 5. Select the downloaded file
 
 ## Install in JetBrains
@@ -17,7 +17,7 @@ These files are JSON in practice, so Verona makes them open and format like JSON
 2. Go to `Plugins`
 3. Click the gear icon
 4. Choose `Install Plugin from Disk...`
-5. Download `verona-jetbrains-1.0.0.jar` or `verona-jetbrains-1.0.0.zip` from the repository release page
+5. Download `verona-jetbrains-1.0.0.jar` or `verona-jetbrains-1.0.0.zip` from [Releases](https://github.com/iqb-berlin/verona-ide-support/releases/tag/v1.0.0)
 6. Select the downloaded file
 
 ## What colleagues get

@@ -6,6 +6,7 @@ We now have a small internal plugin called `Verona` for `.vomd`, `.vocs`, and `.
 Those files are JSON in practice, and Verona makes them open and format properly in VS Code and JetBrains.
 
 Install links:
+- Release page: `https://github.com/iqb-berlin/verona-ide-support/releases/tag/v1.0.0`
 - VS Code: release asset `verona-vscode-1.0.0.vsix`
 - JetBrains: release asset `verona-jetbrains-1.0.0.jar`
 

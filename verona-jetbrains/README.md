@@ -10,7 +10,7 @@ Verona adds first-class support for `*.vomd`, `*.vocs`, and `*.voud` files in Je
 
 ## Install
 
-1. Download `verona-jetbrains-1.0.0.jar` or `verona-jetbrains-1.0.0.zip` from the GitHub Releases page
+1. Download `verona-jetbrains-1.0.0.jar` or `verona-jetbrains-1.0.0.zip` from the [GitHub release page](https://github.com/iqb-berlin/verona-ide-support/releases/tag/v1.0.0)
 2. Open `Settings` / `Preferences`
 3. Go to `Plugins`
 4. Click the gear icon
